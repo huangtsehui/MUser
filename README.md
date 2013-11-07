@@ -21,6 +21,13 @@
 7. 使用 irods api
 
 9. 演示代码
-		print ("hello github");
+		
+
+		#include <stdio.h>
+		#include <string.h>
+	
+		int main(){
+	 	print("hello github\n");
+		}
 
 
