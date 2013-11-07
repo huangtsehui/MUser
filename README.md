@@ -35,5 +35,7 @@
 
 
 ***
+
+![](http://www.genomics.cn/portal/images/logo.png) 
+
 ***
-![](http://www.99haopu.com/page/home/imgs/logo_bgi_1.gif) 
