@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conf>
+
+	<request>
+		<name>guest</name>
+		<pasw>visit</pasw>
+	</request>
+
+	<ldap>
+		<ldapHost>172.30.5.115</ldapHost> <!-- LDAP服务器地址 --> 
+		<ldapPort>389</ldapPort>
+		<ldapBaseDn>dc=bgitech,dc=com</ldapBaseDn>
+		<ldapRootDn>cn=Manager,dc=bgitech,dc=com</ldapRootDn>
+		<ldapUserDn>ou=People,dc=bgitech,dc=com</ldapUserDn>
+		<ldapRootPw>secret</ldapRootPw>
+		<ldapHomeDr>/bphome</ldapHomeDr>
+	</ldap>
+
+	<irods>
+		<rods location="深圳">
+			<rodsHost>172.30.5.114</rodsHost>  <!-- iRODS（iCAT）系统服务器地址 -->
+			<rodsPort>1247</rodsPort>
+			<rodsUserName>rods</rodsUserName>
+			<rodsUserPasswd>rods</rodsUserPasswd>
+			<rodsZone>bgitech</rodsZone>
+		</rods>
+		<!--
+		<rods location="香港">
+			<rodsHost>172.30.5.104</rodsHost>
+			<rodsPort>1247</rodsPort>
+			<rodsUserName>rods</rodsUserName>
+			<rodsUserPasswd>rods</rodsUserPasswd>
+			<rodsZone>bgitech</rodsZone>
+		</rods>
+		-->
+	</irods>
+
+</conf>

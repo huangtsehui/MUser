@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="UserManager"
+ targetNamespace="http://192.168.8.187/UserManager.wsdl"
+ xmlns:tns="http://192.168.8.187/UserManager.wsdl"
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns="urn:UserManager"
+ xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:HTTP="http://schemas.xmlsoap.org/wsdl/http/"
+ xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+ xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+ xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+ xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+ <schema targetNamespace="urn:UserManager"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns="urn:UserManager"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+  <!-- operation request element -->
+  <element name="adduser">
+   <complexType>
+    <sequence>
+     <element name="username" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__adduser::username -->
+     <element name="password" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__adduser::password -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="adduserResponse">
+   <complexType>
+    <sequence>
+     <element name="errcode" type="xsd:int" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__adduser::errcode -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="moduser">
+   <complexType>
+    <sequence>
+     <element name="username" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__moduser::username -->
+     <element name="password" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__moduser::password -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="moduserResponse">
+   <complexType>
+    <sequence>
+     <element name="errcode" type="xsd:int" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__moduser::errcode -->
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+
+</types>
+
+<message name="adduserRequest">
+ <part name="Body" element="ns:adduser"/><!-- ns__adduser::ns__adduser -->
+</message>
+
+<message name="adduserResponse">
+ <part name="Body" element="ns:adduserResponse"/>
+</message>
+
+<message name="moduserRequest">
+ <part name="Body" element="ns:moduser"/><!-- ns__moduser::ns__moduser -->
+</message>
+
+<message name="moduserResponse">
+ <part name="Body" element="ns:moduserResponse"/>
+</message>
+
+<portType name="UserManagerPortType">
+ <operation name="adduser">
+  <documentation>Service definition of function ns__adduser</documentation>
+  <input message="tns:adduserRequest"/>
+  <output message="tns:adduserResponse"/>
+ </operation>
+ <operation name="moduser">
+  <documentation>Service definition of function ns__moduser</documentation>
+  <input message="tns:moduserRequest"/>
+  <output message="tns:moduserResponse"/>
+ </operation>
+</portType>
+
+<binding name="UserManager" type="tns:UserManagerPortType">
+ <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+ <operation name="adduser">
+  <SOAP:operation soapAction=""/>
+  <input>
+     <SOAP:body parts="Body" use="literal"/>
+  </input>
+  <output>
+     <SOAP:body parts="Body" use="literal"/>
+  </output>
+ </operation>
+ <operation name="moduser">
+  <SOAP:operation soapAction=""/>
+  <input>
+     <SOAP:body parts="Body" use="literal"/>
+  </input>
+  <output>
+     <SOAP:body parts="Body" use="literal"/>
+  </output>
+ </operation>
+</binding>
+
+<service name="UserManager">
+ <documentation>gSOAP 2.8.15 generated service definition</documentation>
+ <port name="UserManager" binding="tns:UserManager">
+  <SOAP:address location="http://192.168.8.187/UserManager.cgi"/>
+ </port> <port name="UserManager" binding="tns:UserManager">
+  <SOAP:address location="http://192.168.8.187"/>
+ </port>
+</service>
+
+</definitions>

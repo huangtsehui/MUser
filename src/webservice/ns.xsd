@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <schema targetNamespace="urn:UserManager"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns="urn:UserManager"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+  <!-- operation request element -->
+  <element name="adduser">
+   <complexType>
+    <sequence>
+     <element name="username" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__adduser::username -->
+     <element name="password" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__adduser::password -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="adduserResponse">
+   <complexType>
+    <sequence>
+     <element name="errcode" type="xsd:int" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__adduser::errcode -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="moduser">
+   <complexType>
+    <sequence>
+     <element name="username" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__moduser::username -->
+     <element name="password" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__moduser::password -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="moduserResponse">
+   <complexType>
+    <sequence>
+     <element name="errcode" type="xsd:int" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__moduser::errcode -->
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+

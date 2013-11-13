@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice
+END
+UserManager.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/UserManager.wsdl
+END
+soapServerLib.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/soapServerLib.c
+END
+UserManager.nsmap
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/UserManager.nsmap
+END
+soapC.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/soapC.c
+END
+soapStub.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/soapStub.h
+END
+soapServer.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/soapServer.c
+END
+ns.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/ns.xsd
+END
+UserManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/UserManager.h
+END
+soapH.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/soapH.h
+END
+stdsoap2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/TS-BC-BP/!svn/ver/4503/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/webservice/stdsoap2.cpp
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/TS-BC-BP/!svn/ver/4553/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/modules
+END
+irodsmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/TS-BC-BP/!svn/ver/4553/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/modules/irodsmodule.cpp
+END
+ldapmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/TS-BC-BP/!svn/ver/4528/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/modules/ldapmodule.cpp
+END
+irodsmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/TS-BC-BP/!svn/ver/4553/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/modules/irodsmodule.h
+END
+ldapmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/TS-BC-BP/!svn/ver/4528/working/EGD/src/trunk/EGD_UserManager/MUser/MUSer2/src/modules/ldapmodule.h
+END
