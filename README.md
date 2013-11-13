@@ -1,3 +1,5 @@
+
+![](http://www.genomics.cn/portal/images/logo.png) 
 #用户管理注册系统
 
 ## TO-DO list
@@ -36,6 +38,5 @@
 
 ***
 
-![](http://www.genomics.cn/portal/images/logo.png) 
 
 ***
