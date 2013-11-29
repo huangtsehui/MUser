@@ -26,7 +26,7 @@
 		</rods>
 		<!--
 		<rods location="香港">
-			<rodsHost>172.30.5.104</rodsHost>
+			<rodsHost>172.30.**.**</rodsHost>
 			<rodsPort>1247</rodsPort>
 			<rodsUserName>rods</rodsUserName>
 			<rodsUserPasswd>rods</rodsUserPasswd>
